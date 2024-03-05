@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" context="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/coin.css">
+    <title>Flip a coin!</title>
+</head>
+<body>
+    <h1 id="game-title">Flip a coin!</h1>
+    <p id="game-description">Heads or Tails? This is a coin flip game.<br>made by Cosmin Irina</p>
+    <div id="board">
+        <div class="scores">
+            <p id="heads-count">Heads: 0</p>
+            <p id="tails-count">Tails: 0</p>
+        </div>
+        <div class="coin" id="coin">
+            <div class="heads">
+                <img src="assets/textures/heads.png" width="200" height="200">
+            </div>
+            <div class="tails">
+                <img src="assets/textures/tails.png" width="200" height="200">
+            </div>
+        </div>
+        <div class="game-buttons" id="game-buttons">
+            <button id="coinflipBtn" onclick="coinFlipAudio.play()">Flip Coin</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+    </div>
+    <script src="assets/coin.js"></script>
+</body>
+</html>

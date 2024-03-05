@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    background-color: darkslateblue;
+    height: 100%;
+}
+
+#game-title {
+    color: white;
+    font-size: 80px;
+    margin: 20px;
+    text-align: center;
+}
+
+#game-description {
+    color: gray;
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+#board {
+    background-color: floralwhite;
+    padding: 20px;
+    margin: 20px 30%;
+    border: 2px solid gray;
+    border-radius: 8px;
+    box-shadow: 0 0 10px;
+    font-size: 25px;
+}
+
+.scores {
+    text-align: right;
+    line-height: 25px;
+}
+
+.coin {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    top: -25px;
+    transform-style: preserve-3d;
+}
+
+.coin img {
+    height: 250px;
+    width: 250px;
+}
+
+.tails {
+    transform: rotateX(180deg);
+    top: -25px;
+}
+
+.heads, .tails {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+@keyframes spin-heads {
+    0% {
+        transform: rotateX(0);
+    }
+    100% {
+        transform: rotateX(2160deg);
+    }
+}
+
+@keyframes spin-tails {
+    0%{
+        transform: rotateX(0);
+    }
+    100% {
+        transform: rotateX(1980deg);
+    }
+}
+
+
+#game-buttons {
+    display: block;
+    background-color: black;
+    font-size: 32px;
+    padding: 10px 20px;
+    margin: auto;
+    text-align: center;
+    max-width: 45%;
+}
+
+#coinflipBtn {
+    display: inline-block;
+    background-color: green;
+    font-size: 32px;
+    padding: 10px 20px;
+    margin: auto;
+    text-align: center;
+}
+
+#resetBtn {
+    display: inline-block;
+    background-color: yellow;
+    font-size: 32px;
+    padding: 10px 20px;
+    margin: auto;
+    text-align: center;
+}
