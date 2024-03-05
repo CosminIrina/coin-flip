@@ -59,7 +59,7 @@ body {
 
 .tails {
     transform: rotateX(180deg);
-    top: -25px;
+    top: -20px;
 }
 
 .heads, .tails {
